@@ -1,100 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Julieta Fuentes | Mi portafolio web </title>
-        <link rel="stylesheet" type="text/css"  href="css/estilos.css">
+        <title>Julieta Fuentes | Mi portafolio web</title>
+        <link rel="stylesheet" type="text/css"  href="css/styles.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark p-1">
-            <div class="container-fluid">
-                <div>
-                    <ul id="fotoynombre">
-                        <li>
-                            <img class="foto" src="img/yo-blancoynegro.jpg">
-                        </li>
-                        <li>
-                           <a class="navbar-brand"> Julieta Fuentes</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div>
-                    <ul class="navbar-nav w-50 justify-content-between menú">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Mis proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <hr>
-        <div id="about">
-            <div id="imagen">
-                <img class="foto2" src="img/Yo-facultad.jpg" alt="Yo en mi primer día en la facultad">
-            </div>
-            <div id="descripcion">
-                <p> Soy Julieta Fuentes, estudiante de la Facultad de Ingeniería, actualmente me encuentro cursando la carrera de Ingeniero en Computación y el curso de Desarrollo Web de Jóvenes a Programar.</p>
-                <p>A los 14 años descubrí el mundo de la programación y desde entonces he buscado estudiar y desarrollarme laboralmente en este campo, a continuación les enseño algunos de mis primeros trabajos realizados en el curso de JAP.</p>
-            </div>
-        </div>
-        <hr>
-        <br>
-        <div class="container-fluid">
-            <div id="proyectos" class="row row-cols-3">
-                <div class="col">
-                    <div class="card">
-                        <img src="img/Captura de pantalla 2024-07-20 230916.png" alt="Ejemplo de Curriculum Vitae">
-                        <div class="card-body">
-                            <a href="cv.html">
-                                Primer ejemplo de CV.                            
-                            </a>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <div id="logo">
+                        <ul id="fotoynombre">
+                            <li>
+                                <img class="foto" src="img/yo-blancoynegro.jpg">
+                            </li>
+                            <li>
+                                <a class="navbar-brand">Julieta Fuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="menu">
+                        <!-- Botón de hamburguesa solo visible en pantallas chicas -->
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Menú como offcanvas en pantallas chicas y horizontal en pantallas grandes -->
+                        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mí</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#proyectos">Mis proyectos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menú horizontal visible solo en pantallas grandes -->
+                        <div class="d-none d-lg-flex">
+                            <ul class="navbar-nav flex-row">
+                                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mí</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#proyectos">Mis proyectos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="img/Formulario.png" alt="Mi primer Formulario">
-                        <div class="card-body">
-                            <a href="formulario.html">
-                                Mi primer formulario.                           
-                            </a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div  id="home" class="section-content invisible">
+                    <div class="img-desc">
+                        <div class="imagen">
+                            <img class="foto2" src="img/Yo-facultad.jpg" alt="Yo en mi primer día en la facultad">
+                        </div>
+                        <div class="descripcion">
+                            <div class="title1">
+                                <h2>Hola! Soy</h2>
+                                <h1>Julieta Fuentes</h1>
+                            </div>
+                            <p class="intro">Estudiante de Ingeniería en Computación en la Facultad de Ingeniería. Me encanta programar y busco oportunidades para seguir creciendo y aplicar mis conocimientos en proyectos reales.</p>
+                            <div class="botones">
+                                <a  href="https://drive.google.com/file/d/1VUIMVffB7HScVUT30PkJkgTSCVahhmRR/view?usp=drive_link"><button class="boton">Descargar CV</button></a>
+                                <a href="#contacto"><button class="boton">Contacto</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>    
-                <div class="col">
-                    <div class="card">
-                        <img  src="img/PrimerUsoDeSelectores.png" alt="La primera vez que uso selectores">
-                        <div class="card-body">
-                            <a href="selectores.html">
-                                La primera vez que usé selectores.                           
-                            </a>
-                        </div>
-                    </div>   
                 </div>
+            </section>
+            <section>
+                <div id="sobremi" class="section-content invisible">
+                    <div class="img-desc">
+                        <div class="descripcion">
+                            <div class="title">
+                                <h1>Sobre mi</h1>
+                                <h2>Julieta Fuentes</h2>
+                            </div>
+                            <p>Me llamo Julieta Fuentes y soy estudiante de Ingeniería en Computación en la Facultad de Ingeniería. Soy una persona apasionada por la tecnología, con un fuerte interés en desarrollarme dentro del mundo IT y continuar ampliando mis conocimientos y habilidades técnicas.</p>
+                            <p>Me caracterizo por ser comprometida, responsable y proactiva. Cuando me propongo un objetivo, hago todo lo que está a mi alcance para alcanzarlo. Tengo la capacidad de aprender de forma autónoma cuando es necesario y enfrento los desafíos con persistencia y buena capacidad de resolución. Además, soy empática y disfruto del trabajo en equipo, buscando siempre integrarme e impulsar una colaboración positiva con quienes me rodean.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div  id="proyectos" class="section-content invisible">
+                    <div class="title">
+                        <h1>Proyectos</h1>
+                    </div>
+                    <div class="container-carousel">
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <div class="card bg-dark">
+                                        <img src="img/ecommerce.png" class="card-img-top" alt="Foto de la página principal de la página de e-commerce">
+                                        <div class="card-body">
+                                            <h5 class="card-title">E-commerce</h5>
+                                            <p class="card-text">Proyecto final del curso JAP, desarrollo en equipo de una tienda online con HTML, CSS, JavaScript y jQuery, entre otros. Cuenta con diseño responsive, modo día/noche, filtros de búsqueda, carrito funcional, perfil editable, etc.</p>
+                                            <a href="https://github.com/CamiiNogueira/CamiiNogueira-e_comerce"><button  class="boton">GitHub</button></a>
+                                            <a href="https://camiinogueira.github.io/CamiiNogueira-e_comerce/login.html"><button  class="boton">Página</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <div class="card bg-dark">
+                                        <img src="img/japflix.png" class="card-img-top" alt="Foto de la página principal de japflix">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Japflix</h5>
+                                            <p class="card-text">En esta tarea nos daban una API donde se guardaban descripciones de peliculas (nombre, descripción, género, calificación, etc) y nosotros debíamos hacer un buscador funcional donde al hacer una búsqueda te muestre en una lista todas las películas de la API que tuvieran esa palabra en su descripción, nombre o género.</p>
+                                            <a href="https://github.com/julieta-fuentes/taller-12.1.2.git"><button  class="boton">GitHub</button></a>
+                                            <a href="https://julieta-fuentes.github.io/taller-12.1.2/"><button  class="boton">Página</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card bg-dark">
+                                        <img src="img/finalProject.png" class="card-img-top" alt="Foto de la página principal de la página del proyecto final">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Responsive + diseño Adaptativo</h5>
+                                            <p class="card-text">Proyecto para un curso de desarrollo web de Coursera, nos daban una página base y debíamos estilizarla, cambiar las imágenes, hacerla responsive y utilizar diseño adaptativo.</p>
+                                            <a href="https://github.com/julieta-fuentes/BasicMediaQueries-Colors.git"><button  class="boton">GitHub</button></a>
+                                            <a href="https://julieta-fuentes.github.io/finalProyect/"><button  class="boton">Página</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="habilidades" class="section-content invisible">
+                    <div class="title">
+                        <h1>Habilidades</h1>
+                    </div>
+                    <div class="container">
+                        <div class="card bg-dark">
+                            <img src="img/pascal.png" class="card-img-top" alt="Logo del lenguaje Pascal">
+                            <div class="card-body">
+                                <h5 class="card-title">Pascal</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/cmasmas.png" class="card-img-top" alt="Logo del lenguaje C++">
+                            <div class="card-body">
+                                <h5 class="card-title">C++</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/html.png" class="card-img-top" alt="Logo del lenguaje HTML">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/javascript.png" class="card-img-top" alt="Logo del lenguaje JavaScript">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/css.png" class="card-img-top" alt="Logo del lenguaje CSS">
+                            <div class="card-body">
+                                <h5 class="card-title">CSS</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/github.png" class="card-img-top" alt="Logo de GitHub">
+                            <div class="card-body">
+                                <h5 class="card-title">GitHub</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/trello.png" class="card-img-top" alt="Logo de Trello">
+                            <div class="card-body">
+                                <h5 class="card-title">Trello</h5>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/figma.png" class="card-img-top" alt="Logo de Figma">
+                            <div class="card-body">
+                                <h5 class="card-title">Figma</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="educacion" class="section-content invisible">
+                    <div class="title">
+                        <h1>Educación</h1>
+                    </div>
+                    <div class="container">
+                        <div class="card bg-dark">
+                            <img src="img/jap.png" class="card-img-top" alt="Logo del lenguaje Pascal">
+                            <div class="card-body">
+                                <p class="card-title">Jóvenes a Programar</p>
+                                <p class="card-text">2024 - actual</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/Logo_Fing.png" class="card-img-top" alt="Logo del lenguaje C++">
+                            <div class="card-body">
+                                <p class="card-title">Facultad de Ingeniería - Ingeniería en Computación</p>
+                                <p class="card-text">2022 - actual</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <img src="img/coursera.png" class="card-img-top" alt="Logo del lenguaje HTML">
+                            <div class="card-body">
+                                <p class="card-title">Coursera - Diseño Web para Todos: Conceptos básicos de desarrollo y codificación web</p>
+                                <p class="card-text">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div  id="contacto" class="section-content invisible">
+                    <div class="title">
+                        <h1>Contacto</h1>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/julieta-fuentes"><p><i class="fa-brands fa-github"></i> GitHub</p></a>
+                        <a href="https://github.com/julieta-fuentes"><p><i class="fa-brands fa-linkedin"></i> Linkedin</p></a>
+                        <a href="mailto:julietafuentesquintana@gmail.com"><p><i class="fa-solid fa-envelope"></i> Email</p></a>
+                    </div>
+                </div>
+            </section>
+            <div id="go-top" class="invisible">
+                <button class="go-top-button"><a href="#"><i class="fa-solid fa-angle-up"></i></a></button>
             </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div id="contacto">
-            <p>Si gustas contactarme, este es mi gmail:</p>
-            <p>julietafuentesquintana@gmail.com</p>
-        </div>
-        <br>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <p>Página hecha por: Julieta Fuentes</p>
+            </div>
+        </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://kit.fontawesome.com/8ee148fea6.js" crossorigin="anonymous"></script>
     </body>
 </html>
