@@ -105,7 +105,7 @@ h1 {
     font-size: 0.9em;
     background-color: rgb(219, 165, 140);
     border-radius: 10rem;
-    color: white;
+    color: #292929;
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -114,8 +114,8 @@ h1 {
 }
 
 .boton:hover {
-    background-color:rgb(201, 151, 128);
-    color:  #292929;
+    background-color:#b88872;
+    color: black;
     transform: scale(1.15);
 }
 
