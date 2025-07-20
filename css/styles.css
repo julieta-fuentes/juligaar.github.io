@@ -92,16 +92,31 @@ h1 {
 }
 
 .botones{
+    margin-top: 1vh;
     display: flex;
     justify-content: center;
     gap: 4vw;
 }
 
 .boton{
+    display: inline-block;
+    padding: 10px 15px;
     width: 30vw;
+    font-size: 0.9em;
     background-color: rgb(219, 165, 140);
     border-radius: 10rem;
+    color: white;
+    text-decoration: none;
     border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color:rgb(201, 151, 128);
+    color:  #292929;
+    transform: scale(1.15);
 }
 
 .intro{
@@ -144,6 +159,9 @@ h1 {
     align-items: center;
 }
 
+.card .boton{
+    margin: 1vw;
+}
 
 #educacion .card-title{
     font-size: 2vh;
@@ -237,6 +255,7 @@ footer{
     width: 6vh;
     font-size: 3vh;
     background-color: rgba(219, 165, 140, 0.884);
+    padding: 15px 15px;
 }
 
 .go-top-button a{
