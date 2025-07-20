@@ -50,7 +50,7 @@ header{
 a.active{
     color: rgb(219, 165, 140);
     padding: .5rem;
-    border-bottom: 1px solid pink;
+    border-bottom: 1px solid  rgba(219, 165, 140, 0.884);
     transition: all .5s; 
 }
 
@@ -255,14 +255,14 @@ footer{
     width: 6vh;
     font-size: 3vh;
     background-color: rgba(219, 165, 140, 0.884);
+    color:#292929;
     padding: 15px 15px;
 }
 
-.go-top-button a{
-    text-decoration: none;
-    color:#292929;
+.go-top-button:hover{
+    color: black;
+    background-color:#b88872;
 }
-
 
 @media (min-width: 998px){
     .title1{
