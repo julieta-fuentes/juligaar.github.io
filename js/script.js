@@ -12,7 +12,9 @@ window.addEventListener('scroll', () => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 300;
         const sectionId = current.getAttribute('id');
-        if ((scrollY > sectionTop && scrollY < sectionTop + sectionHeight) || (scrollY >= document.documentElement.scrollHeight - 1000)) {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        if ((scrollY > sectionTop && scrollY < sectionTop + sectionHeight) || (scrollY + windowHeight >= documentHeight)) {
             if(!current.classList.contains('visible')) {
                     current.classList.remove('invisible');
                     current.classList.add('visible');

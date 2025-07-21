@@ -6,15 +6,16 @@
         <title>Julieta Fuentes | Mi portafolio web</title>
         <link rel="stylesheet" type="text/css"  href="css/styles.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="Site">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
                 <div class="container-fluid">
                     <div id="logo">
                         <ul id="fotoynombre">
                             <li>
-                                <img class="foto" src="img/yo-blancoynegro.jpg" alt="">
+                                <a href="img/yo-blancoynegro.jpg" data-lightbox="image-1" aria-label="Foto de la creadora de la página en blanco y negro"><img class="foto" src="img/yo-blancoynegro.jpg" alt=""></a>
                             </li>
                             <li>
                                 <a class="navbar-brand">Julieta Fuentes</a>
@@ -61,12 +62,12 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="Site-content">
             <section>
                 <div  id="home" class="section-content invisible">
                     <div class="img-desc">
                         <div class="imagen">
-                            <img class="foto2" src="img/Yo-facultad.jpg" alt="Yo en mi primer día en la facultad">
+                            <a href="img/Yo-facultad.jpg" data-lightbox="image-2" aria-label="Foto de la creadora de la página en su facultad"><img class="foto2" src="img/Yo-facultad.jpg" alt=""></a>
                         </div>
                         <div class="descripcion">
                             <div class="title1">
@@ -216,21 +217,21 @@
                         <div class="card bg-dark">
                             <img src="img/jap.png" class="card-img-top" alt="Logo del lenguaje Pascal">
                             <div class="card-body">
-                                <p class="card-title">Jóvenes a Programar</p>
+                                <p class="h4 card-title">Jóvenes a Programar</p>
                                 <p class="card-text">2024 - actual</p>
                             </div>
                         </div>
                         <div class="card bg-dark">
                             <img src="img/Logo_Fing.png" class="card-img-top" alt="Logo del lenguaje C++">
                             <div class="card-body">
-                                <p class="card-title">Facultad de Ingeniería - Ingeniería en Computación</p>
+                                <p class="h4 card-title">Facultad de Ingeniería - Ingeniería en Computación</p>
                                 <p class="card-text">2022 - actual</p>
                             </div>
                         </div>
                         <div class="card bg-dark">
                             <img src="img/coursera.png" class="card-img-top" alt="Logo del lenguaje HTML">
                             <div class="card-body">
-                                <p class="card-title">Coursera - Diseño Web para Todos: Conceptos básicos de desarrollo y codificación web</p>
+                                <p class="h4 card-title">Coursera - Diseño Web para Todos: Conceptos básicos de desarrollo y codificación web</p>
                                 <p class="card-text">2025</p>
                             </div>
                         </div>
@@ -250,16 +251,15 @@
                 </div>
             </section>
             <div id="go-top" class="invisible">
-                <a class="go-top-button" role="button" href="#top">Botón para subir<i class="fa-solid fa-angle-up"></i></a>
+                <a class="go-top-button" role="button" href="#top"> <i class="fa-solid fa-angle-up"></i></a>
             </div>
         </main>
         <footer>
-            <div class="container-footer">
-                <p>Página hecha por: Julieta Fuentes</p>
-            </div>
+            <p>Página hecha por: Julieta Fuentes</p>
         </footer>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
         <script src="https://kit.fontawesome.com/8ee148fea6.js" crossorigin="anonymous"></script>
+        <script src="js/lightbox-plus-jquery.js"></script>
     </body>
 </html>
