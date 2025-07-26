@@ -34,11 +34,6 @@ main{
     width: 4rem;
 }
 
-header{
-    background-color:#292929;
-    padding: 3vh;
-}
-
 .abajo{
     backdrop-filter: blur(15px);
     background: rgba(41, 41, 41, .4);
@@ -338,10 +333,6 @@ footer{
         height: auto;
     }
 
-    .botones{
-        justify-content: left;
-    }
-
     .boton{
         width: 15vw;
         font-size: 2.5vh;
@@ -378,7 +369,6 @@ footer{
     }
 
     .section-content{
-        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -388,4 +378,10 @@ footer{
         height: 20vh;
     }
 
+}
+
+@media (min-width: 998px) and (min-height: 790px){
+    .section-content{
+        height: 100vh;
+    }
 }
